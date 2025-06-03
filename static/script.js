@@ -36,7 +36,7 @@
               displayError('Please enter a city name.');
               return;
           }
-          clearOtherResults(); // Clear results from other buttons
+          clearOtherResults();
 
           try {
               const response = await fetch(`/weather/${encodeURIComponent(location)}`);
