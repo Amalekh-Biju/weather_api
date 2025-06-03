@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API Frontend</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Lookup</h1>
+      <div class="search-box">
+        <input
+          type="text"
+          id="locationInput"
+          placeholder="Enter city name (e.g., London)" />
+        <button id="getWeatherButton">Get Weather</button>
+      </div>
+
+      <div id="weatherResult" class="weather-info"></div>
+
+      <div id="errorMessages" class="error-message"></div>
+
+      <h2>Other Endpoints:</h2>
+      <div class="other-endpoints">
+        <button id="getRandomWeatherButton">Get Random Weather</button>
+        <div id="randomWeatherResult" class="weather-info"></div>
+
+        <button id="getGlobalAverageButton">Get Global Average</button>
+        <div id="globalAverageResult" class="weather-info"></div>
+      </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
